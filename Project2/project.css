@@ -4,6 +4,10 @@
     margin : 0px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* Navigation Bar */
 .navbar{
     z-index:10;
@@ -27,12 +31,11 @@
 
 /* Navigation Bar : logo and image */
 .logo{
-    margin: 3px 24px;
-    padding: 2px;
+    margin: 10px 34px;
 }
 .logo img{
-    height : 70px;
-    margin : 10px 10px;
+    height: 59px;
+    margin: 3px 6px;
 }
 
 /* Navigation Bar : list styling  */
@@ -44,43 +47,22 @@
 }
 .navbar ul li{
     list-style: none;
-    padding: 4px 13px;
-    margin : 8px 8px;
+    /* padding: 4px 13px; */
+    /* margin : 8px 8px; */
 }
 .navbar ul li a{
-    font-size : 1.8rem;
+    font-size : 1.3rem;
     color : white;
+    padding: 3px 22px;
     text-decoration: none;
+    border-radius: 20px;
     display : block;
-    padding : 0px 8px;
 }
  
 .navbar ul li a:hover{
     background-color: white;
-    border : 0px solid black;
-    border-radius: 14px;
     color : black;
 }
-.navbar .search{
-    align-self: center;
-    margin : 0px 0px 0px 12%;
-}
-
-/* Navigation Bar : search Box */
-/* .navbar #search{
-    height: 2.5rem;
-    width : 20rem;
-    border-radius:12px;
-    font-size: 1.4rem;   
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
-}
-.navbar input::placeholder{
-    font-size: 1.4rem;   
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
-} */
-
 
 /* home css */
 #home{
@@ -89,17 +71,18 @@
     align-items: center;
     justify-self: center;
     padding:3px 200px;
-    height: 440px;
+    height: 550px;
+    text-align: center;
     font-family:'Times New Roman', Times, serif
 }
 
 #home::before{
     content : "";
     position : absolute;
-    background: url('img/bg1.jpg') no-repeat center center/cover;
+    background: url('bg1.jpg') no-repeat center center/cover;
     top : 0px;
     left : 0px;
-    height: 540px;
+    height: 642px;
     width : 100%;
     opacity: 0.9;
     z-index: -1;
@@ -108,16 +91,18 @@
 /* home : heading  */
 .h-primary{
     color : white;
-    font-size: 6rem;
-    margin : 30px 0px 15px 0px;
+    font-size: 3.8rem;
+    padding : 12px;
     font-family: 'Bree Serif', serif;
 }
-
+#home h1{
+    margin : 100px 0px 10px 0px;
+}
 /* home : para */
 #home p{
     font-family: 'Bree Serif', serif;
     color : white;
-    font-size:1.6rem;
+    font-size:1.5rem;
 }
 
 /* home : button  */
@@ -162,29 +147,25 @@
     font-family:'Baloo Bhai','Courier New', Courier, monospace;
 }
 .h-primary-center{  
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0px;
     text-align: center;
 }
 
 .services{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
 }
 
 .services .box{
-    display: flex;
-    flex-direction: column;
-    width : 100%;
-    align-items: center;
-    justify-content: center;
     border: 2px solid brown;
     padding: 34px;
     margin: 2px 55px;
     border-radius: 28px;
     background: #f2f2f2;
     margin-bottom: 20px;
+    text-align : center;
 }
 .services .box img{
     height: 160px;
@@ -198,7 +179,7 @@
 } 
 
 .h-secondary-center{
-    font-size:2.5rem;
+    font-size:2rem;
 }
 
 /* Clients */
