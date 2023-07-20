@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        .navbar {
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+
+        }
+
+        .navbar ul {
+            /* the background gets removed as it has been overflown by the parent element. 
+            To avoid this, we have to write- */
+            overflow: auto;
+        }
+
+        .navbar li {
+            /* updating only li of navbar class*/
+            /* make them in line */
+            float: left;
+            /* removing bullets */
+            list-style: none;
+            margin: 12px 10px;
+            padding: 4px 4px;
+        }
+
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            cursor: pointer;
+
+        }
+
+        .navbar li a:hover {
+            color: antiquewhite
+        }
+
+        .search {
+            float : right;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+            height:19px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact Us</a></li>
+            <div class="search"><input type="text" class="search" id="search" placeholder="search here"></div>
+        </ul>
+    </nav>
+</body>
+
+</html>

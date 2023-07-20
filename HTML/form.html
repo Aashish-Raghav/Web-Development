@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h3>Here is my form</h3>
+    <form action="Backend.php">
+        <fieldset>
+            <legend>Personal:</legend>
+            <label for = "fname">First Name</label>
+            <input type="text" name = "Name" id = "fname">
+            <br>
+            <label for = "Role"> Role: </label> 
+            <input type="text" name = "Role" id = "Role">
+            <br>
+            <label for = "email"> Email: </label>
+            <input type="email" name = "Email" id = "email">
+            <br>
+            <label for = "Date"> Date: </label>
+            <input type="date" name="Date" id = "Date">
+            
+            <br>
+            <label for = "Eligibilty">Are you Eligible: </label>
+            <input type="checkbox" name="Eligibilty" checked id = "Eligibilty">
+            <br>
+            <label for = "Gender">Gender: </label>
+             <input type="radio" name="Gender" id = "Gender"> Male
+            <input type="radio" name="Gender" id = "Gender" checked> Female
+            <input type="radio" name="Gender" id = "Gender" >Other
+            
+            <br>
+            <label for = "About"> Write about You:</label> <br>
+            <textarea name="About"  cols="30" rows="10" id = "About">Your Past Experience in this Domain</textarea>
+            <br>
+            <label for = "">
+                <label for = "Car">Car</label>
+                    <select name="Cars" id = "Car" size ="4"  >
+                        <option value="Cars">Swift</option> 
+                        <option value="Cars" selected>Dezire</option>
+                        <option value="Cars">Baleno</option>
+                    </select>
+            </label>
+            <br>
+            <label for = "Browsers">Browsers</label>
+                <input list = "Browsers" name = "Browsers">
+                <datalist id = "Browsers">
+                    <option value="Internet Emplorer"></option>
+                    <option value="Firefox"></option>
+                    <option value="Safari"></option>
+                    <option value="Microsoft Edge"></option>
+                </datalist>
+            <br>
+            <label for="myfile">Select a File:</label>
+            <input type="file" name="myfile" id="myfile" value="Choose">
+            <br>
+            <label for = "">
+                <input type="submit" value="Submit" onclick="alert('Wonna Submit')">
+                <input type="reset" value="Reset">
+            </label>
+            <br>
+        </fieldset>
+
+
+    </form>
+
+</body>
+</html>

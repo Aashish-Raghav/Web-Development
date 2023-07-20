@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .container{
+            display: flex;
+            margin : 100px auto;
+            /* height : 300px; */
+            width : 50%;
+            border : 2px solid red;
+            background-color: cyan;
+            align-items: center;
+            justify-content: center;
+            border-radius: 14px;
+        }
+        .box{
+            margin : 50px 10px;
+            border:2px solid black;
+            padding : 10px 10px;
+            color :blue;
+            width : 30%;
+            height : 250px;
+            border-radius: 14px;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in;
+            
+        }
+        .box:hover{
+            border : 2px solid red;
+            background-color: blue;
+            color : white;
+            width : 40%;
+            font-size: 19px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem vel sint consequuntur error ea impedit modi sequi blanditiis cum obcaecati perferendis iusto labore, dignissimos possimus quod a eum doloremque! Ut repudiandae sed deleniti ab.  
+        </div>
+    </div>
+</body>
+</html>

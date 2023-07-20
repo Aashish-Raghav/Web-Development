@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<style>
+    .items{
+        display : none;      
+        border:2px solid black;
+    }
+
+    @media (min-width : 0px) and (max-width : 400px) {
+        #item-1{
+            display : block;
+            background-color: cyan;
+              
+        }
+    }
+
+    @media (min-width : 400px) and (max-width : 900px) {
+        #item-2{
+            display : block;
+            background-color:wheat;
+        }
+    }
+
+    @media (min-width : 900px) and (max-width : 1300px){
+        #item-3{
+            display : block;
+            background-color:blue;
+            color : white;
+        }
+    }
+    @media (min-width : 1300px){
+        #item-4{
+            display : block;
+            background-color: yellow;
+            color : black
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <h1 class="items" id="item-1">This is iphone viewport</h1>
+        <h1 class="items" id="item-2">This is table viewport</h1>
+        <h1 class="items" id="item-3">This is computer viewport</h1>
+        <h1 class="items" id="item-4">This is widescreen computer viewport</h1>
+    </div>
+</body>
+</html>
