@@ -89,7 +89,7 @@ html{
 }
 
 /* home : heading  */
-.h-primary{
+.h_primary{
     color : white;
     font-size: 3.8rem;
     padding : 12px;
@@ -143,10 +143,10 @@ html{
     align-items: center;
     justify-content: center;
 } */
-#services-container h1{
+#services_container h1{
     font-family:'Baloo Bhai','Courier New', Courier, monospace;
 }
-.h-primary-center{  
+.h_primary_center{  
     font-size: 3rem;
     margin: 0px;
     text-align: center;
@@ -178,12 +178,12 @@ html{
 
 } 
 
-.h-secondary-center{
+.h_secondary_center{
     font-size:2rem;
 }
 
 /* Clients */
-#client-container{
+#client_container{
     font-family: 'Bree Serif', serif;
     position: relative;
     /* display: flex;
@@ -192,7 +192,7 @@ html{
     justify-content: center; */
 }
 
-#client-container::before{
+#client_container::before{
     content : "";
     position: absolute;
     background-color: black;
@@ -208,22 +208,22 @@ html{
     align-items: center;
     justify-content: center;
 }
-.clients-logo{
+.clients_logo{
     padding : 40px;
     margin : 0px 40px;
 }
-.clients-logo img{
+.clients_logo img{
     height : 124px;
     /* width : 100px; */
 }
 
 /* Contact */
-#contact-container{
+#contact_container{
     font-family: 'Bree Serif', serif;
     position : relative;
     
 }
-#contact-container::before{
+#contact_container::before{
     content : "";
     position : absolute;
     background: url(img/contact.jpg) no-repeat center center/cover;
@@ -233,37 +233,37 @@ html{
     z-index : -1;
 }
 
-#contact-box{
+#contact_box{
     display : flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#contact-box form{
+#contact_box form{
     width : 40%;
     padding-bottom: 200px;
 }
     
-#contact-box div{
+#contact_box div{
     font-size : 1.5rem;
 }
-#contact-box input{
+#contact_box input{
     width : 100%;
     height : 30px;
     border-radius: 14px;
     font-size:1.4rem;
 }
-#contact-box textarea{
+#contact_box textarea{
     width : 100%;
     height : 170px;
     border-radius: 14px;
     
 }
-#contact-box input::placeholder,textarea::placeholder{
+#contact_box input::placeholder,textarea::placeholder{
     font-size:1.4rem;
 }
-#contact-box .btn{
+#contact_box .btn{
     margin : 10px;
 }
 

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid area</title>
+    <style>
+        .container{
+            display : grid;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'home home home about'
+            'services services services about'
+            'clients clients clients about'
+            'contact contact contact about'
+            'footer footer footer footer';
+            gap : 10px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #Home{
+            grid-area: home;
+            height : 200px;
+            width : 70vw;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(11, 30, 237);
+            color : white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #services{
+            text-align: center;
+            grid-area: services;
+            
+        }
+        #clients{
+            grid-area: clients;
+        }
+        #contact{
+            grid-area: contact;
+        }
+        #about{
+            grid-area: about;
+        }
+        footer{
+            grid-area: footer;
+        }
+        .item{
+            border:2px solid black;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            padding : 10px;
+
+        }
+        #services-item{
+            display : flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .service-item{
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">Home Services Clients Contact</div>
+        <div id="Home" class="item">
+            <h1 class = "h-primary"> Welcome to Home Page</h1>
+            <p class = "h-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt ut </p>
+            <p >Lorem ipsum dolor sit amet consectetur, adipisicing </p>
+        </div>
+        <div id="services" class="item">
+            <h1 class = "h-primary"> These are services</h1>
+            <div id="services-item">
+                <div class="service-item">food container</div>
+                <div class="service-item">food deli</div>
+                <div class="service-item">food dep</div>
+            </div>
+        </div>
+        <div id="clients" class="item">skype microsoft apple</div>
+        <div id="contact" class="item">contact Us</div>
+        <div id="about" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nam velit in, incidunt fugit molestiae ullam similique praesentium nobis aliquam illo unde omnis dicta impedit quos maxime! Ratione quasi possimus veniam suscipit reiciendis error, odit, alias sunt repellendus vitae iusto ullam rem qui laborum quis provident explicabo! Esse adipiscitore?</div>
+        <footer class="item">this is footer</footer>
+    </div>
+</body>
+</html>
