@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM(Document object model)</title>
+</head>
+<body>
+    <div class="container">
+        <p id="item_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, inventore.</p>
+        <p id="item_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, expedita</p>
+        <p id="item_3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, mollitia!</p>
+        <p id="item_4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, repellat?</p>
+        <ul class="list">
+            <li id="list_item_1">1</li>
+            <li id="list_item_2">2</li>
+            <li id="list_item_3">3</li>
+            <li id="list_item_4">4</li>
+        </ul>
+    </div>
+    <script>
+        let container = document.getElementsByClassName("container");
+        console.log(container);
+        let item_1 = document.getElementById('item_1');
+        console.log(item_1.innerText);
+
+        console.log(item_2.innerText);
+
+        let selector = document.querySelector(".list  li");
+        console.log(selector.innerText);
+        selector = document.querySelectorAll(".list  li");
+        console.log(selector[1].innerText);
+        
+    </script>
+</body>
+</html>

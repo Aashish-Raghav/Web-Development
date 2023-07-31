@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <script>
+        var employee = {
+            name : "Aashish",
+            salary : 10000,
+            Graduation : "BTech(IT)"
+        };
+        console.log(employee);
+        for (key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+        let arr = ["ABC","CDE","DEG"];
+        arr.forEach(function fname(value) {console.log(`Good Morning, ${value}`)})
+        function fname(value) {console.log(`Good Morning, ${value}`)}
+        for (value in arr) {fname(arr[value])}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

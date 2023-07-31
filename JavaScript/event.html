@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event and listing Event</title>
+    <style>
+        body{
+            background-color: black;
+            color : white;
+        }
+        #primary{
+            font-weight: bold;
+            color: cyan;
+            
+        }
+        #btn{
+            margin : 10px;
+            padding : 10px;
+            border-radius: 10px;
+            color :bisque;
+            border : 2px solid gold;
+            background-color: cadetblue;
+            cursor: pointer;
+        }
+        #btn:hover{
+            border : 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="primary">This is main heading</h1>
+        <p id = "para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, quam ducimus? Adipisci, a! Omnis rem esse ad inventore voluptates, odit quidem soluta excepturi necessitatibus repellendus, perferendis porro? Repellat tenetur aspernatur eius sit. Reiciendis, a facilis? Aut deleniti porro, laudantium fuga illo modi repudiandae cumque nam maiores delectus non quod quidem autem nesciunt numquam magni, tempora aliquid vitae minima sit ut! Ullam error praesentium provident ut eius vel, iusto sed optio, reiciendis molestiae fugiat nemo dolorem dolor aliquam adipisci minus! Ex, blanditiis quam enim incidunt sapiente optio consequuntur, esse ducimus laudantium vel fugiat eveniet aut cumque asperiores quae, magni illum similique?</p>
+    </div>
+    <button id = 'btn' onclick = "toggleHide()">Show/Hide</button>
+    <script>
+        function toggleHide(){
+            if (para.style.display == 'none')
+                para.style.display = 'block';
+            else
+                para.style.display = 'none';
+        }
+        function f1(){alert("mouse over text");}
+        para.addEventListener('mouseover',f1);
+        function f2(){alert("mouse away text");}
+        para.addEventListener('mouseout',f2);
+    </script>
+    
+</body>
+</html>
